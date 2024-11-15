@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb://localhost:27017/userSignUp", {
+mongoose.connect("mongodb+srv://cs23b057:cs23b057@testforrender.6nt0d.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })

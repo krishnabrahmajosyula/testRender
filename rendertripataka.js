@@ -4,7 +4,7 @@ const renderEngine = new BABYLON.Engine(canvasScreen, true);
 // Function to fetch model data by name
 async function fetchModelByName(name) {
     try {
-        const response = await fetch(`http://localhost:5000/models?name=${name}`);
+        const response = await fetch(`https://testrender-5uik.onrender.com/models?name=${name}`);
         if (!response.ok) {
             throw new Error("Failed to retrieve model data");
         }

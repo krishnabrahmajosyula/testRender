@@ -29,7 +29,7 @@ function toggleVisibility(element){
         }
 
         try {
-            const response = await fetch("http://localhost:5000/signup", {
+            const response = await fetch("https://testrender-5uik.onrender.com/signup", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ name, email, username, password, artForm, isArtist, contribute }),
@@ -59,7 +59,7 @@ function toggleVisibility(element){
         formData.append("description", description);  // Append description
     
         try {
-            const response = await fetch("http://localhost:5000/uploadmodel", { method: "POST", body: formData });
+            const response = await fetch("https://testrender-5uik.onrender.com/uploadmodel", { method: "POST", body: formData });
             const data = await response.json();
             if (response.ok) {
                 alert("Model uploaded successfully");
